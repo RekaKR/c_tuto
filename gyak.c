@@ -119,14 +119,21 @@ int main() {
   // char input
   printf("adj meg egy karaktert: ");
   char karakter;
-  scanf("%c", &karakter);
+  scanf(" %c", &karakter); // a szünet azért kell, mert előtte van már input és amiatt az entert érzékeli először
   printf("ezt adtad meg: %c\n", karakter);
 
-  // string input
-  printf("adj meg max 49 karakter hosszu szoveget: ");
+  // string input - az első szünetig
+  printf("adj meg max 49 karakter hosszu szoveget szunettel: ");
   char string[50];
-  scanf("%s", string);
+  scanf(" %s", string); // a szünet azért kell, mert előtte van már input és amiatt az entert érzékeli először
   printf("ezt adtad meg: %s\n", string);
+
+  // string input - végig
+  printf("adj meg max 49 karakter hosszu szoveget: ");
+  char string4[50];
+  fgetc(stdin); // azért kell, mert előtte van már input és amiatt az entert érzékeli először
+  fgets(string4, 50, stdin);
+  printf("ezt adtad meg: %s\n", string4);
 
   // int tömb input
   int a[2];
