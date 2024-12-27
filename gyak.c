@@ -60,7 +60,27 @@ int main() {
   string3[3] = 'a';
   string3[4] = '\0';
 
+  /*
   // typedef
+  struct Pont {
+    double x, y;
+  };
+  typedef struct Pont Pont;
+ 
+  Pont p;
+  
+  //rövidebben
+  typedef struct Pont1 {
+    double x, y;
+  } Pont1;
+ 
+  Pont1 p;
+
+  //még rövidebben:
+  typedef struct {
+    double x, y;
+  } Pont3;
+  */
 
   // makró
   #define NEV "\0IdeJönMindenFéleKarakter"
