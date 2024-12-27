@@ -131,9 +131,9 @@ int main() {
 
   // hiba kezelés
   if (file == NULL) {
-		perror("Error uzike1");
-		return 1;
-	}
+    perror("Error uzike1");
+    return 1;
+  }
 
   // első sor beolvasása - int
   int row;
